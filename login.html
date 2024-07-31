@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f064c8;
+            color: #ea64df;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background: #d46acf;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header styles */
+        header {
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #e5e6dc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #d058d0;
+        }
+
+        /* Login Form */
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .login-form label {
+            font-size: 1.1em;
+            text-align: left;
+            color: #333;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            transition: border 0.3s ease;
+        }
+
+        .login-form input:focus {
+            border-color: #d058d0;
+            outline: none;
+            box-shadow: 0 0 5px rgba(208, 88, 208, 0.5);
+        }
+
+        .login-form button {
+            padding: 10px;
+            background-color: #d058d0;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-form button:hover {
+            background-color: #b647b5;
+        }
+
+        /* Footer styles */
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Login</h1>
+            <nav>
+                <ul>
+                    <li><a href="register.html">register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                
+
+                </ul>
+            </nav>
+        </header>
+        <form class="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Log In</button>
+        </form>
+        <footer>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
